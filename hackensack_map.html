@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea8dbab08add3169d6bdb39e32d75e50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea8dbab08add3169d6bdb39e32d75e50" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea8dbab08add3169d6bdb39e32d75e50 = L.map(
+                "map_ea8dbab08add3169d6bdb39e32d75e50",
+                {
+                    center: [40.738893, -74.104844],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03f4e48c3f8af25817de1df24a1a8d61 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "ESRI World Imagery",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_03f4e48c3f8af25817de1df24a1a8d61.addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+            var circle_marker_0f9c7ac4915b76c40b231907140c5b38 = L.circleMarker(
+                [40.73149253278342, -74.11383937631429],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_b41cc841f22aeb106906ef0d248a3f41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23bf5cd91dd96a237467ccdc84aac88e = $(`<div id="html_23bf5cd91dd96a237467ccdc84aac88e" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_b41cc841f22aeb106906ef0d248a3f41.setContent(html_23bf5cd91dd96a237467ccdc84aac88e);
+            
+        
+
+        circle_marker_0f9c7ac4915b76c40b231907140c5b38.bindPopup(popup_b41cc841f22aeb106906ef0d248a3f41)
+        ;
+
+        
+    
+    
+            circle_marker_0f9c7ac4915b76c40b231907140c5b38.bindTooltip(
+                `<div>
+                     Western Electric Site (Nokia)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b747b2907d71145bc15c2c472ed96edd = L.circleMarker(
+                [40.75041765205132, -74.09951944232327],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_480b2a7d9abd649f24baf4d124eed240 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_165e7e3b95e7cf60f697e6a12694d1a6 = $(`<div id="html_165e7e3b95e7cf60f697e6a12694d1a6" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_480b2a7d9abd649f24baf4d124eed240.setContent(html_165e7e3b95e7cf60f697e6a12694d1a6);
+            
+        
+
+        circle_marker_b747b2907d71145bc15c2c472ed96edd.bindPopup(popup_480b2a7d9abd649f24baf4d124eed240)
+        ;
+
+        
+    
+    
+            circle_marker_b747b2907d71145bc15c2c472ed96edd.bindTooltip(
+                `<div>
+                     Standard Chlorine Site (Beazer,OxyChem, Cooper, Apogent)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02ed153a8abbf03f7aa67fafa0ee00e6 = L.circleMarker(
+                [40.724401, -74.106595],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_c00b40dbfbf44a5e848ada5c970b2e70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69209c752183de400351500504a696bf = $(`<div id="html_69209c752183de400351500504a696bf" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_c00b40dbfbf44a5e848ada5c970b2e70.setContent(html_69209c752183de400351500504a696bf);
+            
+        
+
+        circle_marker_02ed153a8abbf03f7aa67fafa0ee00e6.bindPopup(popup_c00b40dbfbf44a5e848ada5c970b2e70)
+        ;
+
+        
+    
+    
+            circle_marker_02ed153a8abbf03f7aa67fafa0ee00e6.bindTooltip(
+                `<div>
+                     Federal Shipbuilding Site (US Steel, RTC Properties)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e688c9ef5a9b4c0eb1bb0344d5195c2 = L.circleMarker(
+                [40.74429235539165, -74.09892594747733],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_dfc2bc0c622a723adc12bba1e6cf37b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f62192794856e20016eaf2108f925a2 = $(`<div id="html_5f62192794856e20016eaf2108f925a2" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_dfc2bc0c622a723adc12bba1e6cf37b8.setContent(html_5f62192794856e20016eaf2108f925a2);
+            
+        
+
+        circle_marker_7e688c9ef5a9b4c0eb1bb0344d5195c2.bindPopup(popup_dfc2bc0c622a723adc12bba1e6cf37b8)
+        ;
+
+        
+    
+    
+            circle_marker_7e688c9ef5a9b4c0eb1bb0344d5195c2.bindTooltip(
+                `<div>
+                     Meadows Rail Yard Facility (Conrail)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb601b197acdaf95ffb0011f4e0dfb65 = L.circleMarker(
+                [40.72030593141203, -74.11614328795092],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_3572866126349aa9a2cc0d6bbf5bd1ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3f9bedc25bb21ce85fb6c7b231eb95c = $(`<div id="html_e3f9bedc25bb21ce85fb6c7b231eb95c" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_3572866126349aa9a2cc0d6bbf5bd1ef.setContent(html_e3f9bedc25bb21ce85fb6c7b231eb95c);
+            
+        
+
+        circle_marker_fb601b197acdaf95ffb0011f4e0dfb65.bindPopup(popup_3572866126349aa9a2cc0d6bbf5bd1ef)
+        ;
+
+        
+    
+    
+            circle_marker_fb601b197acdaf95ffb0011f4e0dfb65.bindTooltip(
+                `<div>
+                     United Cork/BASF Site (BASF)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc580f8f987332ebfc6e0fe3f741d1f4 = L.circleMarker(
+                [40.735198082066, -74.08127133027752],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_aa8746fd87fcfd7143fde486e3b10da7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2820ee9409d2e1247fced7f164eae0b = $(`<div id="html_c2820ee9409d2e1247fced7f164eae0b" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_aa8746fd87fcfd7143fde486e3b10da7.setContent(html_c2820ee9409d2e1247fced7f164eae0b);
+            
+        
+
+        circle_marker_bc580f8f987332ebfc6e0fe3f741d1f4.bindPopup(popup_aa8746fd87fcfd7143fde486e3b10da7)
+        ;
+
+        
+    
+    
+            circle_marker_bc580f8f987332ebfc6e0fe3f741d1f4.bindTooltip(
+                `<div>
+                     PJP Landfill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61ed2c03fe68078c4601624d55e66a2d = L.circleMarker(
+                [40.74331668648509, -74.07381394376795],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_11446a8807de2957c2a23043321dfd29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_006cac879e2a67c18e0be1100918cdd1 = $(`<div id="html_006cac879e2a67c18e0be1100918cdd1" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_11446a8807de2957c2a23043321dfd29.setContent(html_006cac879e2a67c18e0be1100918cdd1);
+            
+        
+
+        circle_marker_61ed2c03fe68078c4601624d55e66a2d.bindPopup(popup_11446a8807de2957c2a23043321dfd29)
+        ;
+
+        
+    
+    
+            circle_marker_61ed2c03fe68078c4601624d55e66a2d.bindTooltip(
+                `<div>
+                     Nicholas Galvanizing Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d49d5477297a22cd7f07d4bb51d3b93 = L.circleMarker(
+                [40.734152336390444, -74.1005129186414],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1, "radius": 10, "stroke": true, "weight": 1}
+            ).addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+        var popup_fb3eb27ec2f78e0b23710ca7563e54a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d0c4608331d00dc974356a812e20654 = $(`<div id="html_2d0c4608331d00dc974356a812e20654" style="width: 100.0%; height: 100.0%;">10 pixels</div>`)[0];
+                popup_fb3eb27ec2f78e0b23710ca7563e54a6.setContent(html_2d0c4608331d00dc974356a812e20654);
+            
+        
+
+        circle_marker_5d49d5477297a22cd7f07d4bb51d3b93.bindPopup(popup_fb3eb27ec2f78e0b23710ca7563e54a6)
+        ;
+
+        
+    
+    
+            circle_marker_5d49d5477297a22cd7f07d4bb51d3b93.bindTooltip(
+                `<div>
+                     Kuehne Chemical Site
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_03f4e48c3f8af25817de1df24a1a8d61.addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+    
+            tile_layer_03f4e48c3f8af25817de1df24a1a8d61.addTo(map_ea8dbab08add3169d6bdb39e32d75e50);
+        
+</script>
+</html>
